@@ -75,8 +75,10 @@
         document.getElementById("isInClient").append(liff.isInClient());
 
         if (liff.isInClient()) {
+          alert("access from line");
           document.getElementById("btnLogOut").style.display = "none";
         } else {
+          alert("access from Web");
           document.getElementById("btnMsg").style.display = "none";
           document.getElementById("btnScanCode").style.display = "none";
           document.getElementById("btnClose").style.display = "none";
