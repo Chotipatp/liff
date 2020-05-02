@@ -74,14 +74,11 @@
         document.getElementById("os").append(liff.getOS());
         document.getElementById("language").append(liff.getLanguage());
         document.getElementById("version").append(liff.getVersion());
-        document.getElementById("accessToken").append(liff.accessToken());
+        document.getElementById("accessToken").append(liff.getAccessToken());
         document.getElementById("isInClient").append(liff.isInClient());
-
         if (liff.isInClient()) {
-          alert("access from line");
           document.getElementById("btnLogOut").style.display = "none";
         } else {
-          alert("access from Web");
           document.getElementById("btnMsg").style.display = "none";
           document.getElementById("btnScanCode").style.display = "none";
           document.getElementById("btnClose").style.display = "none";
